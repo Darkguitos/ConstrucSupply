@@ -1,0 +1,1 @@
+arrumar o tamanho errado do que o figma passou pra  tela do "selecao tipo conta cadastro" e passar pra de iphone 16 (quando tiver tempo tu arrumar isso, foca nas outras telas agora que ta com pouco tempo)

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply - Escolha o Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card-container">
+
+    <!-- Botão de Voltar -->
+    <button type="button" class="btn-back" aria-label="Voltar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F1E36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>  
+      </svg>
+    </button>
+
+    <!-- Cabeçalho -->
+    <header class="card-header">
+      <h1 class="title">Escolha o Cadastro</h1>
+      <p class="subtitle">Seu Marketplace de Materiais de Construção</p>
+    </header>
+
+    <!-- Formulário de Seleção -->
+    <form class="options-form" action="#" method="GET">
+
+      <!-- Opção 1: Cliente -->
+      <label class="account-option">
+        <input type="radio" name="account_type" value="cliente" checked>
+        
+        <div class="option-card">
+          <div class="icon-wrapper">
+            <!-- Ícone de Usuário -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+
+          <div class="option-info">
+            <span class="option-title">Cliente</span>
+            <span class="option-desc">Compre materiais para seu projeto</span>
+            <span class="option-badge">CPF OBRIGATÓRIO</span>
+          </div>
+
+          <!-- Seta Indicativa -->
+          <div class="arrow-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D96B27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </div>
+        </div>
+      </label>
+
+      <!-- Opção 2: Empresa -->
+      <label class="account-option">
+        <input type="radio" name="account_type" value="empresa">
+        
+        <div class="option-card">
+          <div class="icon-wrapper">
+            <!-- Ícone de Loja/Prédio -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D96B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+
+          <div class="option-info">
+            <span class="option-title">Empresa</span>
+            <span class="option-desc">Conta de Vendedor</span>
+            <span class="option-badge">CNPJ OBRIGATÓRIO</span>
+          </div>
+
+          <!-- Seta Indicativa -->
+          <div class="arrow-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D96B27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"> 
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </div>
+        </div>
+      </label>
+
+      <!-- Botão de Ação -->
+      <button type="submit" class="btn-primary">Continuar com a seleção</button>
+    </form>
+
+    <!-- Rodapé -->
+    <footer class="card-footer">
+      <p>Já tem uma conta? <a href="" class="login-link">Entrar</a></p>
+    </footer>
+
+  </main>
+
+</body>
+</html>

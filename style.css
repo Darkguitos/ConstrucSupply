@@ -152,3 +152,200 @@ body {
 }
 
 /* -----------------------------------------------------------------------REPARTIÇÃO DE CODIGO DO CSS PARA CADA TELA DIFENTE----------------------------------------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+/* Card central */
+.card-container {
+  width: 100%;
+  max-width: 402px;
+  background-color: #FFFDF9;
+  padding: 24px 20px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Botão Voltar */
+.btn-back {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #f1ebe4;
+}
+
+/* Cabeçalho */
+.card-header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 32px;
+  color: #0F1E36;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #5A6E85;
+  margin-top: 6px;
+}
+
+/* Formulário de Seleção */
+.options-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Radio para permitir seleção interativa */
+.account-option input[type="radio"] {
+  display: none;
+}
+
+.account-option {
+  cursor: pointer;
+}
+
+/* Card de cada opção */
+.option-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #F1EBE4;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(31, 46, 69, 0.03);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* efeito quando o mause fica ensima do card */
+.account-option:hover .option-card {
+  border-color: #D96B27;
+  box-shadow: 0px 4px 16px rgba(160, 96, 56, 0.236);
+}
+
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #FFF1E7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.option-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-grow: 1;
+}
+
+.option-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #0F1E36;
+}
+
+.option-desc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #5A6E85;
+}
+
+.option-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #D96B27;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* parte do botao principal */
+.btn-primary {
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  background-color: #D96B27;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(217, 107, 39, 0.2);
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #be591c;
+}
+
+/* parte do rodapé */
+.card-footer {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.card-footer p {
+  font-size: 14px;
+  color: #5A6E85;
+}
+
+.login-link {
+  font-family: 'Geist', sans-serif;
+  color: #D96B27;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+
+/* -----------------------------------------------------------------------REPARTIÇÃO DE CODIGO DO CSS PARA CADA TELA DIFENTE----------------------------------------------------------------------------------------------------------------- */
+
+
