@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply | Cadastro de Cliente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card-container">
+    
+    <!-- Barra Superior / Navegação -->
+    <nav class="top-nav">
+      <button type="button" class="btn-back" aria-label="Voltar" onclick="history.back()">&larr;</button>
+      <span class="nav-title">ConstructSupply | Cadastro de Cliente</span>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header class="card-header">
+      <h1 class="title">Criar Sua Conta</h1>
+      <p class="subtitle">Preencha as informações para comprar</p>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <form class="signup-form" action="" method="POST">
+
+      <!-- Nome Completo -->
+      <div class="input-group">
+        <label for="nome">Nome Completo <span class="required">*</span></label>
+        <input 
+          type="text" 
+          id="nome" 
+          name="nome" 
+          placeholder="Ex: Adriano Cardoso Barreto" 
+          required
+        >
+      </div>
+
+      <!-- E-mail -->
+      <div class="input-group">
+        <label for="email">Endereço de Email <span class="required">*</span></label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="exemplo@dominio.com" 
+          required
+        >
+      </div>
+
+      <!-- Telefone -->
+      <div class="input-group">
+        <label for="telefone">Número de Telefone <span class="required">*</span></label>
+        <input 
+          type="tel" 
+          id="telefone" 
+          name="telefone" 
+          placeholder="+55 66 99999-9999" 
+          required
+        >
+      </div>
+
+      <!-- Documento -->
+      <div class="input-group">
+        <label for="documento">CPF ou CNH <span class="required">*</span></label>
+        <input 
+          type="text" 
+          id="documento" 
+          name="documento" 
+          placeholder="000.000.000-00" 
+          required
+        >
+      </div>
+
+      <!-- Senha -->
+      <div class="input-group">
+        <label for="password">Senha <span class="required">*</span></label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="••••••••" 
+          required
+        >
+      </div>
+
+      <!-- Confirmar Senha -->
+      <div class="input-group">
+        <label for="confirm-password">Confirmar Senha <span class="required">*</span></label>
+        <input 
+          type="password" 
+          id="confirm-password" 
+          name="confirm_password" 
+          placeholder="••••••••" 
+          required
+        >
+      </div>
+
+      <!-- Botão de Envio -->
+      <button type="submit" class="btn-primary">Criar Conta</button>
+    </form>
+
+  </main>
+
+</body>
+</html>
