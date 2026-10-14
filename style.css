@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=Outfit:wght@800&family=Inter:wght@400&display=swap');
+/* Tela de login */
 /* o import foi para carregar as fontes */
 * {  
   box-sizing: border-box;
@@ -153,7 +154,8 @@ body {
 
 /* -----------------------------------------------------------------------REPARTIÇÃO DE CODIGO DO CSS PARA CADA TELA DIFENTE----------------------------------------------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist:wght@700&display=swap');
+/* Seleção do tipo de cadastro */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist:wght@700&display=swap');/* isso aqui é a fonte que tu usa do google no projeto */
 
 * {
   margin: 0;
@@ -250,8 +252,8 @@ body {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* efeito quando o mause fica ensima do card */
-.account-option:hover .option-card {
+/* efeito de escolha do card */
+.account-option input[type="radio"]:checked + .option-card {
   border-color: #D96B27;
   box-shadow: 0px 4px 16px rgba(160, 96, 56, 0.236);
 }
@@ -367,14 +369,8 @@ body {
 
 /* -----------------------------------------------------------------------REPARTIÇÃO DE CODIGO DO CSS PARA CADA TELA DIFENTE----------------------------------------------------------------------------------------------------------------- */
 
-
+/* Cadastro de cliente */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -427,10 +423,6 @@ body {
   padding: 4px;
   border-radius: 4px;
   transition: opacity 0.2s;
-}
-
-.btn-back:hover {
-  opacity: 0.6;
 }
 
 .nav-title {
@@ -529,4 +521,547 @@ body {
 
 /* -----------------------------------------------------------------------REPARTIÇÃO DE CODIGO DO CSS PARA CADA TELA DIFENTE----------------------------------------------------------------------------------------------------------------- */
 
+/* Perfil do cliente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 0;
+}
+
+/* Container Principal */
+.card-container {
+  width: 100%;
+  max-width: 402px;
+  background-color: #F9FAFB;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Barra Superior */
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1A1C1E;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: opacity 0.2s;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0B0704;
+}
+
+.brand-divider {
+  color: #000000;
+}
+
+.page-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1C1E;
+}
+
+/* Corpo do Perfil */
+.profile-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+/* Cards Genéricos */
+.profile-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #E9ECEF;
+  padding: 20px;
+}
+
+/* Header do Usuário */
+.user-header-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar-container {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #FFF5ED;
+  border: 2px solid #E8772A;
+  color: #E8772A;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #E8772A;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A1C1E;
+  margin-bottom: 16px;
+}
+
+.btn-outline {
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  border: 1.5px solid #E8772A;
+  border-radius: 122px;
+  color: #E8772A;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #FFF5ED;
+}
+
+/* Título de Seções */
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A1C1E;
+  margin-bottom: 16px;
+}
+
+/* Lista de Informações Pessoais */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #F9FAFB;
+  border-radius: 12px;
+}
+
+.info-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Ícones padronizados conforme icones.txt */
+.info-icon svg,
+.settings-icon svg {
+  width: 16px;
+  height: 16px;
+  color: #E8772A;
+  flex-shrink: 0;
+}
+
+.info-details dt {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6C7074;
+  text-transform: uppercase;
+}
+
+.info-details dd {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A1C1E;
+  margin-top: 2px;
+}
+
+/* Lista de Configurações */
+.settings-list {
+  list-style: none;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #E9ECEF;
+  text-decoration: none;
+  color: #1A1C1E;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.settings-list li:last-child .settings-item {
+  border-bottom: none;
+}
+
+.settings-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #FFF5ED;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-icon svg {
+  display: block;
+}
+
+.chevron {
+  color: #6C7074;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Botão Sair da Conta */
+.btn-logout {
+  width: 100%;
+  height: 48px;
+  background-color: #FEF2F2;
+  border: 1px solid #DC2626;
+  border-radius: 16px;
+  color: #DC2626;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+  background-color: #fee2e2;
+}
+
+/* -----------------------------------------------------------------------REPARTIÇÃO DE CODIGO DO CSS PARA CADA TELA DIFENTE----------------------------------------------------------------------------------------------------------------- */
+
+/* Perfil do lojista */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 0;
+}
+
+/* Card Principal */
+.card-container {
+  width: 100%;
+  max-width: 402px;
+  background-color: #F9FAFB;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Top Nav */
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1A1C1E;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: opacity 0.2s;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0B0704;
+}
+
+.brand-divider {
+  color: #6C7074;
+}
+
+.page-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1C1E;
+}
+
+/* Conteúdo */
+.profile-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Blocos de Seção */
+.profile-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #E9ECEF;
+  padding: 20px;
+}
+
+/* Cabeçalho do Perfil */
+.user-header-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar-container {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #FFF5ED;
+  border: 2px solid #E8772A;
+  color: #E8772A;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #E8772A;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A1C1E;
+  margin-bottom: 16px;
+}
+
+.btn-outline {
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  border: 1.5px solid #E8772A;
+  border-radius: 12px;
+  color: #E8772A;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #FFF5ED;
+}
+
+/* Título de Seções */
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A1C1E;
+  margin-bottom: 16px;
+}
+
+/* Lista de Informações da Empresa */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #F9FAFB;
+  border-radius: 12px;
+}
+
+.info-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-details dt {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6C7074;
+  text-transform: uppercase;
+}
+
+.info-details dd {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A1C1E;
+  margin-top: 2px;
+}
+
+/* Lista de Configurações */
+.settings-list {
+  list-style: none;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #E9ECEF;
+  text-decoration: none;
+  color: #1A1C1E;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.settings-list li:last-child .settings-item {
+  border-bottom: none;
+}
+
+.settings-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #FFF5ED;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron {
+  color: #6C7074;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Botão Sair da Conta */
+.btn-logout {
+  width: 100%;
+  height: 48px;
+  background-color: #FEF2F2;
+  border: 1px solid #DC2626;
+  border-radius: 16px;
+  color: #DC2626;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+  background-color: #fee2e2;
+}
