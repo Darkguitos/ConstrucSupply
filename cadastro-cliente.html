@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply | Cadastro de Cliente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tela="cadastro-cliente">
+
+  <main class="cartao-conteiner">
+
+    <!-- vai ser a barra superior e navegação -->
+    <nav class="navegacao-superior">
+      <button type="button" class="botao-voltar" aria-label="Voltar" data-voltar data-destino-alternativo="selecao-tipo-conta-cadastro.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+</svg></button>
+      <span class="navegacao-titulo">ConstructSupply | Cadastro de Cliente</span>
+    </nav>
+
+    <!-- fica com o cabeçalho -->
+    <header class="cartao-cabecalho">
+      <h1 class="titulo">Criar Sua Conta</h1>
+      <p class="subtitulo">Preencha as informações para comprar</p>
+    </header>
+
+    <!-- formulário dos cadastro -->
+    <form class="cadastro-formulario" action="" method="POST" data-destino-envio="catalogo-marketplace-cliente.html">
+
+      <div class="grupo-campo">
+        <label for="nome">Nome Completo <span class="obrigatorio">*</span></label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Adriano Cardoso Barreto" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="email">Endereço de Email <span class="obrigatorio">*</span></label>
+        <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="telefone">Número de Telefone <span class="obrigatorio">*</span></label>
+        <input type="tel" id="telefone" name="telefone" placeholder="+55 66 99999-9999" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="documento">CPF ou CNH <span class="obrigatorio">*</span></label>
+        <input type="text" id="documento" name="documento" placeholder="000.000.000-00" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="password">Senha <span class="obrigatorio">*</span></label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="confirm-password">Confirmar Senha <span class="obrigatorio">*</span></label>
+        <input type="password" id="confirm-password" name="confirm_password" placeholder="••••••••" required>
+      </div>
+
+      <!-- botão pra envia -->
+      <button type="submit" class="botao-principal">Criar Conta</button>
+    </form>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

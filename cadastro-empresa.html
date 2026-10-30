@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply | Cadastro de Empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tela="cadastro-empresa">
+
+  <main class="cartao-conteiner">
+
+    <!-- barra superior que que segura o nome da página não esquece qu etodos çao assim -->
+    <nav class="navegacao-superior">
+      <button type="button" class="botao-voltar" aria-label="Voltar" data-voltar data-destino-alternativo="selecao-tipo-conta-cadastro.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+</svg></button>
+      <span class="navegacao-titulo">ConstructSupply | Cadastro</span>
+    </nav>
+
+    <!-- cabeçalho -->
+    <header class="cartao-cabecalho">
+      <h1 class="titulo">Cadastro de Empresa</h1>
+    </header>
+
+    <!-- formulário de cadastro pra empresa -->
+    <form class="cadastro-formulario" action="#" method="POST" data-destino-envio="painel-lojista-empresa.html">
+
+      <!-- razão social -->
+      <div class="grupo-campo">
+        <label for="razao-social">Razão Social <span class="obrigatorio">*</span></label>
+        <input type="text" id="razao-social" name="razao_social" placeholder="Pedreira Santa Rita LTDA" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="cnpj">CNPJ <span class="obrigatorio">*</span></label>
+        <input type="text" id="cnpj" name="cnpj" placeholder="12.345.678/0001-99" required>
+      </div>
+
+      <!-- inscrição estadual -->
+      <div class="grupo-campo">
+        <label for="ie">Inscrição Estadual <span class="obrigatorio">*</span></label>
+        <input type="text" id="ie" name="inscricao_estadual" placeholder="Isento ou Nº da IE" required>
+      </div>
+
+      <!-- endereço de e - mail ou gmail, (pesquisa lá a diferença) -->
+      <div class="grupo-campo">
+        <label for="email">Endereço de Email <span class="obrigatorio">*</span></label>
+        <input type="email" id="email" name="email" placeholder="barreto@fasipe.com.br" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="password">Senha <span class="obrigatorio">*</span></label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="confirm-password">Confirmar Senha <span class="obrigatorio">*</span></label>
+        <input type="password" id="confirm-password" name="confirm_password" placeholder="••••••••" required>
+      </div>
+
+      <!-- botão de apertar -->
+      <button type="submit" class="botao-principal">Criar Conta</button>
+    </form>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply | Gestão de Pedidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tela="gestao-pedidos-empresa">
+
+  <main class="cartao-conteiner">
+
+    <!-- barra superior -->
+    <header class="navegacao-superior">
+      <div class="navegacao-titulo-grupo">
+        <button type="button" class="botao-voltar" aria-label="Voltar" data-voltar data-destino-alternativo="Entrar-selecao.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+</svg></button>
+        <span class="navegacao-titulo">ConstructSupply | Painel do Lojista</span>
+      </div>
+
+      <div class="superior-acoes">
+        <!-- painel de produtos -->
+        <a href="painel-lojista-empresa.html" class="acao-botao" aria-label="Painel de produtos do lojista" data-ir-para="painel-lojista-empresa.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+</svg>
+        </a>
+        <!-- perfil -->
+        <a href="perfil-lojista.html" class="acao-botao" aria-label="Perfil do Lojista" data-ir-para="perfil-lojista.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+</svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="pedidos-conteudo">
+      <h1 class="pagina-titulo">Gestão de Pedidos</h1>
+
+      <!-- seção do  aguardando -->
+      <section class="pedido-coluna">
+        <div class="coluna-cabecalho">
+          <div class="situacao-indicador">
+            <span class="ponto ponto-aguardando"></span>
+            <h2 class="coluna-titulo">Aguardando</h2>
+          </div>
+          <span class="selo selo-aguardando">2</span>
+        </div>
+
+        <div class="cartoes-rolagem-conteiner">
+
+          <article class="pedido-cartao">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8294</span>
+              <span class="pedido-tempo tempo-destacado">Há 5 min</span>
+            </div>
+            <div class="cartao-informacoes">
+              <h3 class="cliente-nome">Willian Hubner</h3>
+              <p class="pedido-itens">4x Saco de Brita</p>
+            </div>
+            <div class="cartao-acoes">
+              <button type="button" class="botao-recusar">Recusar</button>
+              <button type="button" class="botao-aceitar">Aceitar</button>
+            </div>
+          </article>
+
+          <article class="pedido-cartao">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8292</span>
+              <span class="pedido-tempo">Há 12 min</span>
+            </div>
+            <div class="cartao-informacoes">
+              <h3 class="cliente-nome">Adriano Barreto</h3>
+              <p class="pedido-itens">15x Vergalão</p>
+            </div>
+            <div class="cartao-acoes">
+              <button type="button" class="botao-recusar">Recusar</button>
+              <button type="button" class="botao-aceitar">Aceitar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- seção do  em entriga -->
+      <section class="pedido-coluna">
+        <div class="coluna-cabecalho">
+          <div class="situacao-indicador">
+            <span class="ponto ponto-entrega"></span>
+            <h2 class="coluna-titulo">Em Entrega</h2>
+          </div>
+          <span class="selo selo-entrega">2</span>
+        </div>
+
+        <div class="cartoes-rolagem-conteiner">
+
+          <article class="pedido-cartao cartao-atenuado">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8271</span>
+              <span class="selo-situacao selo-entrega">Em rota</span>
+            </div>
+            <div class="cartao-informacoes">
+              <h3 class="cliente-nome">Yuri Gobatto</h3>
+              <p class="pedido-itens">10 Tons – Cimento...</p>
+            </div>
+            <a href="#" class="cartao-link" data-sem-destino="acao-sem-tela">Rastreamento</a>
+          </article>
+
+          <article class="pedido-cartao cartao-atenuado">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8272</span>
+              <span class="pedido-tempo">Em rota</span>
+            </div>
+            <div class="cartao-informacoes">
+              <h3 class="cliente-nome">Arthur Lorenzi</h3>
+              <p class="pedido-itens">3000 Unit – Tijolo...</p>
+            </div>
+            <a href="#" class="cartao-link" data-sem-destino="acao-sem-tela">Rastreamento</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- seção dos entregues -->
+      <section class="pedido-coluna">
+        <div class="coluna-cabecalho">
+          <div class="situacao-indicador">
+            <span class="ponto ponto-sucesso"></span>
+            <h2 class="coluna-titulo">Entregues</h2>
+          </div>
+          <span class="selo selo-sucesso">2</span>
+        </div>
+
+        <div class="cartoes-rolagem-conteiner">
+
+          <article class="pedido-cartao cartao-atenuado">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8261</span>
+              <span class="selo-situacao selo-sucesso">Entregue</span>
+            </div>
+            <div class="cartao-informacoes">
+              <h3 class="cliente-nome">Maria Mercedes</h3>
+              <p class="pedido-itens">120 Tons – Cimento...</p>
+            </div>
+            <a href="#" class="cartao-link" data-sem-destino="acao-sem-tela">Nota Fiscal</a>
+          </article>
+
+          <article class="pedido-cartao cartao-atenuado">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8242</span>
+              <span class="selo-situacao selo-sucesso">Entregue</span>
+            </div>
+            <div class="cartao-informacoes">
+              <h3 class="cliente-nome">Marilyn Monroe</h3>
+              <p class="pedido-itens">3000 Unit – Tijolo...</p>
+            </div>
+            <a href="#" class="cartao-link" data-sem-destino="acao-sem-tela">Nota Fiscal</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- seção dos recusados -->
+      <section class="pedido-coluna">
+        <div class="coluna-cabecalho">
+          <div class="situacao-indicador">
+            <span class="ponto ponto-recusado"></span>
+            <h2 class="coluna-titulo">Recusados</h2>
+          </div>
+          <span class="selo selo-recusado">2</span>
+        </div>
+
+        <div class="cartoes-rolagem-conteiner">
+
+          <article class="pedido-cartao cartao-atenuado">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8274</span>
+            </div>
+            <div class="cartao-informacoes-dividido">
+              <div class="informacoes-esquerda">
+                <h3 class="cliente-nome">Marcia Miranda</h3>
+                <p class="pedido-itens">100x Sacos de Cimento</p>
+              </div>
+              <div class="motivo-caixa">
+                <span class="motivo-titulo">Motivo:</span>
+                <p class="motivo-descricao">Quantidade não disponível.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="pedido-cartao cartao-atenuado">
+            <div class="cartao-superior">
+              <span class="pedido-identificador">#O-8273</span>
+            </div>
+            <div class="cartao-informacoes-dividido">
+              <div class="informacoes-esquerda">
+                <h3 class="cliente-nome">Marco Pollo</h3>
+                <p class="pedido-itens">50000x Tijolo.</p>
+              </div>
+              <div class="motivo-caixa">
+                <span class="motivo-titulo">Motivo:</span>
+                <p class="motivo-descricao">não vendemos para esse tipo de cliente.</p> <!-- cliente petista detectado! (brincadeira) -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

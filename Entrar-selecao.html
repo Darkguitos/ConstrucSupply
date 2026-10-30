@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply | Escolha a Conta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tela="Entrar-selecao">
+
+  <main class="cartao-conteiner">
+
+    <!-- botão de voltar -->
+    <nav class="navegacao-superior-simples">
+      <button type="button" class="botao-voltar" aria-label="Voltar" data-voltar data-destino-alternativo="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+</svg></button>
+    </nav>
+
+    <!-- cabecalho -->
+    <header class="cartao-cabecalho">
+      <h1 class="titulo">Escolha a conta</h1>
+      <p class="subtitulo">Esse frame não teria no aplicativo.<br>Isso é só para o trabalho.</p>
+    </header>
+
+    <!-- parte de navegar entre as contas existentes -->
+    <section class="conta-selecao" aria-label="Opções de conta">
+
+      <!-- o do cliente -->
+      <a href="catalogo-marketplace-cliente.html" class="conta-cartao" data-ir-para="catalogo-marketplace-cliente.html">
+        <div class="icone-circulo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+</svg>
+        </div>
+
+        <div class="conta-detalhes">
+          <span class="conta-titulo">Cliente</span>
+          <span class="conta-descricao">Compre materiais para seu projeto</span>
+          <span class="conta-selo">CPF OBRIGATÓRIO</span>
+        </div>
+
+        <div class="seta-icone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+        </div>
+      </a>
+
+      <!-- a da empresa -->
+      <a href="gestao-pedidos-empresa.html" class="conta-cartao" data-ir-para="gestao-pedidos-empresa.html">
+        <div class="icone-circulo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+</svg>
+        </div>
+
+        <div class="conta-detalhes">
+          <span class="conta-titulo">Empresa</span>
+          <span class="conta-descricao">Conta de Vendedor</span>
+          <span class="conta-selo">CNPJ OBRIGATÓRIO</span>
+        </div>
+
+        <div class="seta-icone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+        </div>
+      </a>
+
+    </section>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

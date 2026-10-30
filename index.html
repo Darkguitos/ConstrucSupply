@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tela="index">
+
+  <main class="entrar-conteiner">
+
+    <!-- head -->
+    <header class="entrar-cabecalho">
+      <h1 class="marca-titulo">ConstructSupply</h1>
+      <p class="subtitulo">Acesse sua conta</p>
+    </header>
+
+    <!-- forms de acesso -->
+    <form class="entrar-formulario" action="#" method="POST" data-destino-envio="Entrar-selecao.html">
+      <div class="grupo-campo">
+        <label for="email">ENDEREÇO DE EMAIL *</label>
+        <input type="email" id="email" name="email" placeholder="Masteryi@construtora.com" required>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="password">SENHA *</label>
+        <input type="password" id="password" name="password" placeholder="Insira sua senha" required>
+        <a href="#" class="esqueceu-senha" data-sem-destino="recuperacao-de-senha">Esqueceu a senha?</a>
+      </div>
+
+      <button type="submit" class="botao-entrar">Entrar</button>
+    </form>
+
+    <!-- rodapé -->
+    <footer class="entrar-rodape">
+      <p>Não tem uma conta? <a href="selecao-tipo-conta-cadastro.html" class="cadastro-link" data-ir-para="selecao-tipo-conta-cadastro.html">Cadastre-se</a></p>
+    </footer>
+
+  </main>
+
+  <div class="risco-preto"></div>  <!-- não mexer nisso, só desbri que o risco preto é coisa do iphone depois que achei bonito e coloquei ele na tela, mas se brincar, se tu tirar ele tudo deve quebrar :p -->
+
+  <script src="script.js" defer></script>
+</body>
+</html>

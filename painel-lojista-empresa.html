@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstructSupply | Painel do Lojista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-tela="painel-lojista-empresa">
+
+  <main class="cartao-conteiner">
+
+    <!-- barra de mavegação -->
+    <nav class="navegacao-superior">
+      <button type="button" class="botao-voltar" aria-label="Voltar" data-voltar data-destino-alternativo="Entrar-selecao.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" aria-hidden="true" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+</svg></button>
+      <span class="navegacao-titulo">ConstructSupply | Painel do Lojista</span>
+    </nav>
+
+    <div class="painel-conteudo">
+
+      <!-- identificação da loja -->
+      <header class="loja-cabecalho">
+        <div class="loja-avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+</svg>
+        </div>
+        <h1 class="loja-nome">Pedreira Santa Rita</h1>
+      </header>
+
+      <!-- alternar de plano do lojista tipo, vendeu com o prorio entregador ou sem -->
+      <section class="plano-seletor">
+        <button type="button" class="plano-botao ativo" data-sem-destino="configuracao-de-plano">Plano Vendedor 12%</button>
+        <button type="button" class="plano-botao" data-sem-destino="configuracao-de-plano">Plano de Entrega 24%</button>
+      </section>
+
+      <!-- lista de benefícios do plano -->
+      <ul class="plano-beneficios">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg verificacao-icone" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+</svg>
+          <span>Entrega via empresa (próprio transporte).</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg verificacao-icone" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+</svg>
+          <span>Comissão padrão de 12% por venda</span>
+        </li>
+      </ul>
+
+      <!-- seção do catálogo é pra mostrar seu produtos que podem ser adicionados -->
+      <section class="catalogo-secao">
+        <div class="secao-cabecalho">
+          <h2 class="secao-titulo">Meu Catálogo</h2>
+          <button type="button" class="botao-adicionar-item" data-sem-destino="adicionar-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" aria-hidden="true" viewBox="0 0 16 16">
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+</svg> Adicionar Item</button>
+        </div>
+
+        <!-- card do produto -->
+        <article class="produto-cartao">
+          <img class="produto-imagem" src="imagens/brita.jpg" alt="Brita de granulometria nº 1 para construção">
+
+          <div class="produto-detalhes">
+            <h3 class="produto-nome">Brita Nº 1</h3>
+
+            <div class="preco-linha">
+              <span class="produto-preco">R$ 150,00</span>
+              <span class="preco-divisoria">/</span>
+              <span class="unidade-selo">Toneladas</span>
+            </div>
+
+            <p class="estoque-informacoes">Estoque: 4 Toneladas</p>
+
+            <div class="alerta-selo">
+              <span class="situacao-ponto"></span>
+              <span>Alerta de Estoque Baixo</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- card: configuração de alerta do limiar do estoque baixo -->
+        <div class="configuracao-cartao">
+          <h3 class="configuracao-titulo">Definir Alerta de Estoque Baixo</h3>
+          <div class="configuracao-linha">
+            <label for="threshold-input">Limiar de Alerta</label>
+            <input type="number" id="threshold-input" class="limiar-campo" value="5" min="1">
+          </div>
+        </div>
+      </section>
+
+      <!-- botão que confirma -->
+      <button type="button" class="botao-principal" data-ir-para="gestao-pedidos-empresa.html">Confirmar</button>
+
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
